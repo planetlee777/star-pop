@@ -1,0 +1,78 @@
+@font-face {
+    font-family: bubbles;
+    src: url("../fonts/Jellies.ttf");
+}
+
+@font-face {
+    font-family: cute;
+    src: url("../fonts/CaviarDreams-Wr2O.ttf");
+}
+
+@font-face {
+  font-family: caps;
+  src: url(../fonts/Franxurter-w11D9.ttf);
+}
+
+.title {
+    font-family: "bubbles";
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+
+.formfull {
+    font-family:"cute";
+}
+
+
+.home, .aside {
+  font-family: "cute";
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+#center { 
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #c0a991;
+}
+  #textbox {
+    width: 100%;
+    height: 100px;
+  }
+
+animation: bounce 1s infinite;
+
+@keyframes bounce 
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+animation: spin 1s linear infinite;
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+  .home {
+    z-index: 3;
+  }
+
+  .sidebar {
+    z-index: 1;
+  }
